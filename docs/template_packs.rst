@@ -4,7 +4,7 @@
 How to create your own template packs
 =====================================
 
-First you will have to name your template pack, for this you can't use the name of one of the available template packs in crispy-forms, due to name collisions. For example, let's say in the company we work for, a designer has come up with a CSS bootstrap internally known as ``chocolate``. The company has a Django project that needs to start using ``chocolate``, therefore we need to create a folder named ``chocolate`` within a templates directory. Add the templates directory to ``DIRS`` in the applicable backend in Django's ``TEMPLATES`` setting.
+First you will have to name your template pack, for this you can't use the name of one of the available template packs in crispy-forms, due to name collisions. For example, let's say in the company we work for, a designer has come up with a CSS bootstrap internally known as ``chocolate``. The company has a Django project that needs to start using ``chocolate``, therefore we need to create a folder named ``chocolate`` within a templates directory. Add the templates directory to the `DIRS list <https://docs.djangoproject.com/en/stable/ref/settings/#dirs>`_ for the appropriate backend in your project's ``TEMPLATES`` setting.
 
 Once we have that folder created, we will have to create a concrete directory hierarchy so that crispy-forms can pick it up. This is what bootstrap template pack (v2) looks like::
 
